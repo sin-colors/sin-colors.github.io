@@ -1,23 +1,38 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Test</title>
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
-    <div class="container1">
-      <ul class="flex_display">
-        <li class="item1">item1</li>
-        <li class="item2">item2</li>
-        <li class="item3">item3</li>
-        <li class="item4">item4</li>
-        <li class="item5">item5</li>
-        <li class="item6">item6</li>
-        <li class="item7">item7</li>
-        <li class="item8">item8</li>
-        <li class="item9">item9</li>
-        <li class="item10">item10</li>
-      </ul>
-    </div>
-  </body>
-</html>
+
+    <!--<link rel="stylesheet" href="stylesheet.css">-->
+    <!--<script src="http://fb.me/react-0.13.3.js"></script>-->
+    <!--<script src="http://fb.me/JSXTransformer-0.13.3.js"></script>-->
+    <!--<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>-->
+    <!--<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>-->
+    <!--<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>-->
+    <!--<script src="hello.js"></script>-->
+
+    <!DOCTYPE html>
+    <html>
+     <head>
+      <title>react</title>
+      <meta charset="UTF-8">
+      <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+      <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+     </head>
+     <body>
+       <h1>React Test</h1>
+       <div class="mountain-name">...</div>
+    
+       <!-- JSXを使うためのscriptタグ -->
+       <script type="text/babel">
+    　　<!-- 上のクラス名をここに入れる -->
+       let dom = document.querySelector('.mountain-name');
+    
+       //ブラウザに表示させるためのJSX
+       let element = (
+         <div>
+            <h1>Hello mountain</h1>
+         </div>
+       );
+       ReactDOM.render(element, dom);
+    
+       </script>
+     </body>
+    </html>
